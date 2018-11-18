@@ -4,7 +4,6 @@ import "./App.css";
 import Filtro from "./components/Filtros";
 import PropTypes from "prop-types";
 
-// https://github.com/mui-org/material-ui/blob/master/docs/src/pages/demos/tables/SimpleTable.js
 
 const CORES = ["azul", "preto", "branco"];
 const FABRICANTES = ["Renatinho", "Bob"];
