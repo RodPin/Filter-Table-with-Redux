@@ -1,6 +1,4 @@
 function pregaoReducer(state = [], action = {}) {
-  var a = action.pregao;
-
   if (action.type == "CARREGA_PREGAO") {
     state = action.pregao;
   } else if (action.type == "FILTRAR_PREGAO") {
