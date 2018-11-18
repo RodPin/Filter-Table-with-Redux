@@ -1,0 +1,18 @@
+.div {
+  display: flex;
+  flex-direction: "row";
+  margin-top: 5%;
+}
+
+.ordenar {
+  cursor: pointer;
+}
+
+.container {
+  flex-direction: "row";
+}
+
+.filtrosAndPregao {
+  display: flex;
+  flex-direction: "row";
+}
