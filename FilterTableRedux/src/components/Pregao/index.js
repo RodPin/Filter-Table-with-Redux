@@ -10,6 +10,15 @@ import "./Pregao.css";
 // https://github.com/mui-org/material-ui/blob/master/docs/src/pages/demos/tables/SimpleTable.js
 
 class Pregao extends Component {
+  constructor() {
+    super();
+    this.state = {
+      ofertaAtiva: {}
+    };
+  }
+
+  abreModalParaOferta = (event, IdOfertaSelecionada) => {};
+
   componentWillMount() {
     this.renderNomes(this.props.listaPregao);
   }
@@ -18,11 +27,6 @@ class Pregao extends Component {
     } else {
       var keys = Object.keys(x[0]);
       this.setState({ keys });
-      var data = [];
-      for (var i = 0; i < x.length; i++) {
-        data.push(Object.values(x[i]));
-      }
-      this.setState({ data });
     }
   }
 
@@ -35,16 +39,7 @@ class Pregao extends Component {
               <TableHead>
                 <TableRow>
                   {this.state.keys.map((x, i) => {
-                    return (
-                      <TableCell
-                        className="ordenar"
-                        onClick={() => {
-                          this.ordenar(x);
-                        }}
-                      >
-                        {x}
-                      </TableCell>
-                    );
+                    return <TableCell>{x}</TableCell>;
                   })}
                 </TableRow>
               </TableHead>
@@ -55,28 +50,7 @@ class Pregao extends Component {
                   return (
                     <TableRow>
                       {campos.map((values, i) => {
-                        if (values === "STATUS_UP") {
-                          if (
-                            this.state.data[index].data.usuario ==
-                            this.state.usuario
-                          ) {
-                            return (
-                              <TableCell>
-                                <button
-                                  onClick={() => {
-                                    this.mudarStatus(index);
-                                  }}
-                                >
-                                  Tirar
-                                </button>
-                              </TableCell>
-                            );
-                          } else {
-                            return <TableCell> </TableCell>;
-                          }
-                        } else {
-                          return <TableCell>{values}</TableCell>;
-                        }
+                        return <TableCell>{values}</TableCell>;
                       })}
                     </TableRow>
                   );
