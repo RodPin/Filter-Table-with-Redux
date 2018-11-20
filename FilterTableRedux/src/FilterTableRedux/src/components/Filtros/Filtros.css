@@ -1,0 +1,52 @@
+.divGeral {
+  margin-top: 3%;
+  border: 1px solid brown;
+  border-radius: 4px;
+  height: 30%;
+  width: 20%;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: white;
+}
+
+.areaGeral {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.areaInputs {
+  margin-bottom: 3%;
+}
+
+.titulo {
+  color: brown;
+  font-size: 200%;
+  margin-left: 20%;
+  font-family: "Comic Sans MS", Times, serif;
+}
+
+.button {
+  background-color: brown;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 30%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 20px;
+}
+
+.states {
+  margin-left: 12%;
+  font-family: "Comic Sans MS", Times, serif;
+}
+
+.selectAdd {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

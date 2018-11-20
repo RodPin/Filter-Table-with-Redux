@@ -1,0 +1,32 @@
+.div {
+  display: flex;
+  flex-direction: "row";
+  margin-top: 5%;
+}
+
+.ordenar {
+  cursor: pointer;
+}
+
+.containerr {
+  display: flex;
+  flex-direction: "row";
+  margin-top: 5%;
+}
+
+.checkboxContainer {
+  border: 1px solid brown;
+  border-radius: 4px;
+  height: 30%;
+  width: 17%;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: white;
+  margin-left: 200;
+}
+
+.paper {
+  margin-left: 5;
+  background-color: lightsalmon;
+  flex: 1;
+}
