@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 const CORES = ["azul", "preto", "branco"];
 const FABRICANTES = ["Renatinho", "Bob"];
-const ANO = [2015, 2013];
+const ANO = ['2015', '2013'];
 
 const objFiltros = { CORES, FABRICANTES, ANO };
 
